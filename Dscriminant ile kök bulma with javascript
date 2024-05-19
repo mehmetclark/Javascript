@@ -1,0 +1,18 @@
+function kokleriBul(a, b, c) {
+    var diskriminant = b * b - 4 * a * c;
+    if (diskriminant > 0) {
+        var kok1 = (-b + Math.sqrt(diskriminant)) / (2 * a);
+        var kok2 = (-b - Math.sqrt(diskriminant)) / (2 * a);
+        console.log("Kök 1:", kok1);
+        console.log("Kök 2:", kok2);
+    } else if (diskriminant === 0) {
+        var ciftKok = -b / (2 * a);
+        console.log("Çift katlı kök:", ciftKok);
+    } else {
+        var gercekKisim = -b / (2 * a);
+        var sanalKisim = Math.sqrt(-diskriminant) / (2 * a);
+        console.log("Karmaşık kök 1:", gercekKisim + " + " + sanalKisim + "i");
+        console.log("Karmaşık kök 2:", gercekKisim + " - " + sanalKisim + "i");
+    }
+}
+kokleriBul(1, -3, 2);
