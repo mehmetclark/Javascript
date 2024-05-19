@@ -1,0 +1,7 @@
+function basamakSayisiHesapla(sayi) {
+    sayi = Math.abs(sayi);  
+    var sayiString = sayi.toString();
+        return sayiString.length;
+}
+var sayi = 12345;
+console.log("Basamak sayısı:", basamakSayisiHesapla(sayi)); 
